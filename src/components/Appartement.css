@@ -1,0 +1,23 @@
+.card{
+    background-color:#FF6060;
+    color: white;
+    display: flex;
+    border-radius: 10px;
+    margin: 10px; 
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    min-height: 50px;
+    min-width: 335px;
+    padding: 5px;
+}
+
+@media screen and (width <=805px ){
+    .card{
+        flex-basis:100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+}

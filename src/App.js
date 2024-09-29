@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "./components/Navbar.js";
-import Banner from "./components/Banner.js";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Accueil from "./page/Accueil.js";

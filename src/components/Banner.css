@@ -5,10 +5,11 @@
     background-position: center;
     min-height: 200px;
     border-radius: 25px;
-    max-width: 90vw;
+    
     margin: auto;
     display: grid;
     place-items: center;
+    margin-top: 20px;
   }
   
   .banner::before {

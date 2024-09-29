@@ -1,0 +1,15 @@
+.Grille{
+    background-color:#F6F6F6;
+    margin-top: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (width <=805px ){
+    .Grille{
+        background-color: white;
+    }
+    
+}
