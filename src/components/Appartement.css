@@ -1,14 +1,14 @@
-.card{
+.card1{
     background-color:#FF6060;
-    color: white;
+    
     display: flex;
     border-radius: 10px;
     margin: 10px; 
     flex-direction: column-reverse;
     justify-content: space-between;
-    flex-basis: 25%;
+    
     flex-wrap: wrap;
-    min-height: 50px;
+    
     min-width: 335px;
     padding: 5px;
 }
@@ -21,3 +21,25 @@
     }
     
 }
+
+.appartements-list {
+    display: flex;
+    flex-basis: 25vw;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 50px;
+    
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

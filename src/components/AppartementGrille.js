@@ -6,11 +6,6 @@ function AppartementGrille() {
   return (
     <div className="Grille">
       <Appartement />
-      <Appartement />
-      <Appartement />
-      <Appartement />
-      <Appartement />
-      <Appartement />
     </div>
   );
 }
