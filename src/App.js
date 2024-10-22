@@ -13,10 +13,9 @@ function App() {
         <Route path="/" element={<Accueil />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="*" element={<Erreur />} />
-        <Route path="/logement" element={<Logement />} />
+        <Route path="/logement/:id" element={<Logement />} />
       </Routes>
     </BrowserRouter>
-    /* il faut crée une Route path pour la page logement, avec l'id trouver dans le backend je ne sais pas comment faire encore*/
   );
 }
 

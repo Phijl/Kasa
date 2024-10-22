@@ -1,0 +1,37 @@
+.carrousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carrousel-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .carrousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carrousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .carrousel-button:first-of-type {
+    left: 0;
+  }
+  
+  .carrousel-button:last-of-type {
+    right: 0;
+  }
+  
