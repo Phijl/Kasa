@@ -25,13 +25,13 @@ function Appartement() {
           className="card"
           to={`/logement/${appartement.id}`}
         >
-          <div>
+          <div className="card-content">
             <img
               src={appartement.cover}
               alt={appartement.title}
               className="cover-image"
             />
-            <div>{appartement.title}</div>
+            <div className="card-title">{appartement.title}</div>
           </div>
         </NavLink>
       ))}
