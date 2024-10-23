@@ -1,21 +1,26 @@
 import React from "react";
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Accueil from "./page/Accueil.js";
-import Apropos from "./page/Apropos.js";
-import Erreur from "./page/Erreur.js";
-import Logement from "./page/Logement.js";
+import Accueil from "./page/Accueil";
+import Apropos from "./page/Apropos";
+import Erreur from "./page/Erreur";
+import Logement from "./page/Logement";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/apropos" element={<Apropos />} />
-        <Route path="*" element={<Erreur />} />
-        <Route path="/logement/:id" element={<Logement />} />
-      </Routes>
-    </BrowserRouter>
+    <div id="root">
+      <div className="main-content">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Accueil />} />
+            <Route path="/apropos" element={<Apropos />} />
+            <Route path="*" element={<Erreur />} />
+            <Route path="/logement/:id" element={<Logement />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+      <Footer />
+    </div>
   );
 }
 

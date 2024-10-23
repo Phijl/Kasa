@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Error from "../components/Error";
 
 const Erreur = () => {
@@ -8,7 +7,6 @@ const Erreur = () => {
     <div>
       <Navbar />
       <Error />
-      <Footer />
     </div>
   );
 };

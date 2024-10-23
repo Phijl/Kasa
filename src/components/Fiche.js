@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Carrousel from "./Carrousel";
+import "./Fiche.css";
 
 function Fiche() {
   const { id } = useParams(); // Récupère l'ID du fiche depuis l'URL
@@ -26,11 +27,14 @@ function Fiche() {
   }
 
   return (
-    <div className="Fiche">
-      <Carrousel pictures={fiche.pictures} />
-      <h1>{fiche.title}</h1>
-      <p>{fiche.description}</p>
-      {/* Autres détails du fiche */}
+    <div className="fiche-container">
+      <div className="Fiche">
+        <Carrousel pictures={fiche.pictures} />
+        <h1>{fiche.title}</h1>
+        <h2>{fiche.location}</h2>
+        <p>{fiche.description}</p>
+        {/* Autres détails du fiche */}
+      </div>
     </div>
   );
 }

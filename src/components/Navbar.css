@@ -1,23 +1,35 @@
-.navbar{
+.navbar-container {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+  }
+  
+  .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    font-weight: 500;
-}
-
-.link{
+    align-items: center;    
+    max-width: 90vw; /* Limite la largeur de la barre de navigation à 90% de la vue */
+    width: 100%; /* Occupe toute la largeur disponible du conteneur */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .link {
     display: flex;
     gap: 2rem;
-}
-
-
-.link div:hover{
-    text-decoration: underline;
-
-}
-
-.navbar .link a {
-    color: black;
-    text-decoration: none; /* Supprime la décoration par défaut du lien (soulignement) */
+    font-weight: bold;
   }
+  
+  .link div:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar .link a {
+    color: black;
+    text-decoration: none; 
+  }
+  
+  .logokasa img {
+    max-height: 50px; 
+  }
+  

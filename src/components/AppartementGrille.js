@@ -18,23 +18,25 @@ function AppartementGrille() {
   }, []);
 
   return (
-    <div className="Grille">
-      {appartements.map((appartement) => (
-        <NavLink
-          key={appartement.id}
-          className="card"
-          to={`/logement/${appartement.id}`}
-        >
-          <div className="card-content">
-            <img
-              src={appartement.cover}
-              alt={appartement.title}
-              className="cover-image"
-            />
-            <div className="card-title">{appartement.title}</div>
-          </div>
-        </NavLink>
-      ))}
+    <div className="grille-container">
+      <div className="Grille">
+        {appartements.map((appartement) => (
+          <NavLink
+            key={appartement.id}
+            className="card"
+            to={`/logement/${appartement.id}`}
+          >
+            <div className="card-content">
+              <img
+                src={appartement.cover}
+                alt={appartement.title}
+                className="cover-image"
+              />
+              <div className="card-title">{appartement.title}</div>
+            </div>
+          </NavLink>
+        ))}
+      </div>
     </div>
   );
 }

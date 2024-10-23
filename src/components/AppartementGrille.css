@@ -1,79 +1,82 @@
-.Grille {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    background-color: #F6F6F6;
-    border-radius: 25px;
-    margin-top: 20px;
+.grille-container {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px; 
 }
 
-@media screen and (width <=805px ){
-    .Grille{
-        background-color: white;
-    }
-    
+.Grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  max-width: 90vw; 
+  width: 100%; 
 }
-@media screen and (width <=805px ){
-    .card{
-        flex-basis:100%;
-        margin: 0;
-        margin-bottom: 10px;
-    }
-    
+
+@media screen and (max-width: 805px) {
+  .Grille {
+    background-color: white;
+  }
+
+  .card {
+    flex-basis: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .appartements-list {
-    display: flex;
-    flex-basis: 25vw;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
+  display: flex;
+  flex-basis: 25vw;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .card {
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    min-height: 50px;
-    
-  }
-  .card-content {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    aspect-ratio: 1 / 1; /* Garde le conteneur carré */
-    border-radius: 10px;    
-  }
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 50px;
+}
 
-  .cover-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    border-radius: 10px;
-    display: block;
-  }
+.card-content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Garde le conteneur carré */
+  border-radius: 10px;
+}
 
-  /*Effet noir pour mieux lire le titre dans la carte */
-  .card-content::after {
-    content: "";
-    border-radius: 10px;
-    pointer-events: none; /* Empêche le dégradé de bloquer les clics sur le lien */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40%; 
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-  }
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
 
-  .card-title {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    padding: 5px;
-    border-radius: 3px;
-    font-size: 1em; 
-    z-index: 1;
-    }
-  
+/* Effet noir pour mieux lire le titre dans la carte */
+.card-content::after {
+  content: "";
+  border-radius: 10px;
+  pointer-events: none; /* Empêche le dégradé de bloquer les clics sur le lien */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.card-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 1em;
+  z-index: 1;
+}

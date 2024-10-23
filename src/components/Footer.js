@@ -1,5 +1,4 @@
 import React from "react";
-import "./Footer.css";
 import logoKasaWhite from "../Images/LogoKasaWhite.png";
 
 function Footer() {
@@ -7,7 +6,7 @@ function Footer() {
     <div className="footer">
       <img src={logoKasaWhite} alt="Kasa" />
       <p>
-        © 2020 Kasa. All <span> rights reserved</span>
+        © 2020 Kasa. All <span>rights reserved</span>
       </p>
     </div>
   );

@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 25px;
+    display: grid;
+    justify-items: center;
+    width: 100%; /* Assure que le footer prend toute la largeur */
+  }
+  
+  .footer img {
+    width: 122px;
+  }
+  
+  @media screen and (max-width: 805px) {
+    .footer p span {
+      justify-content: center;
+    }
+  }
+  
+  

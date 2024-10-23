@@ -8,7 +8,6 @@ const Logement = () => {
     <div>
       <Navbar />
       <Fiche />
-      <Footer />
     </div>
   );
 };
