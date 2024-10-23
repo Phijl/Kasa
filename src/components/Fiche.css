@@ -25,6 +25,14 @@ h2{
     font-weight: bolder;
 
 }
+h3{
+  font-family: Montserrat;
+  font-size: 18px;
+  color: #FF6060;
+  margin-bottom: 0;
+  font-weight:lighter;
+
+}
 .tag {
   background-color: #FF6060;
   color: #ffffff;            
@@ -48,3 +56,45 @@ h2{
   gap: 10px;                 
 }
 
+.visage{
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+}
+.star{
+  width: 2vw;
+  
+}
+.rating-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.info3{
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+
+}
+.info2{
+  display: block;
+}
+@media screen and (max-width: 805px) {
+  .info {
+    display: block;
+  }
+  .info2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .info3{
+    align-items: center;
+  }
+}
