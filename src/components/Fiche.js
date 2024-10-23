@@ -32,7 +32,15 @@ function Fiche() {
         <Carrousel pictures={fiche.pictures} />
         <h1>{fiche.title}</h1>
         <h2>{fiche.location}</h2>
+        <div className="tags-container">
+          {fiche.tags.map((tag, index) => (
+            <span key={index} className="tag">
+              {tag}
+            </span>
+          ))}
+        </div>
         <p>{fiche.description}</p>
+
         {/* Autres détails du fiche */}
       </div>
     </div>

@@ -18,7 +18,8 @@ html, body {
   .footer {
     background-color: black;
     color: white;
-    padding: 25px;
+    padding-top: 25px;
+    margin-top: 10px;
     display: grid;
     justify-items: center;
     width: 100%; /* Assure que le footer prend toute la largeur */
