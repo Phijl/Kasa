@@ -18,6 +18,7 @@ h1{
     color: #FF6060;
     margin-bottom: 0;
     font-weight:lighter;
+    margin-top: 0;
 }
 h2{
     font-family: Montserrat;
@@ -31,6 +32,7 @@ h3{
   color: #FF6060;
   margin-bottom: 0;
   font-weight:lighter;
+  text-align: end;
 
 }
 .tag {
@@ -58,11 +60,12 @@ h3{
 
 .visage{
   border-radius: 50%;
-  width: 5vw;
-  height: 5vw;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
 }
 .star{
-  width: 2vw;
+  width: 3vw;
   
 }
 .rating-container{
@@ -93,8 +96,7 @@ h3{
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    text-align: center; 
   }
-  .info3{
-    align-items: center;
-  }
+  
 }

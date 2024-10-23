@@ -4,6 +4,7 @@ import Carrousel from "./Carrousel";
 import "./Fiche.css";
 import FullStar from "../Images/star-active.png";
 import EmptyStar from "../Images/star-inactive.png";
+import Collapse from "./Collapse";
 
 function Fiche() {
   const { id } = useParams(); // Récupère l'ID du fiche depuis l'URL
@@ -70,9 +71,8 @@ function Fiche() {
             </div>
           </div>
         </div>
-        <p>{fiche.description}</p>
-
-        {/* Autres détails du fiche */}
+        <Collapse title="Description" content={fiche.description} />
+        <Collapse title="Équipements" content={fiche.equipments.join(", ")} />
       </div>
     </div>
   );

@@ -1,0 +1,53 @@
+.collapse-container {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px; /* Ajuster la largeur maximale pour les plus grands écrans */
+  }
+  
+  .collapse-header {
+    background-color: #FF6060;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .collapse-header:hover {
+    background-color: #FF6060; /* Couleur légèrement plus sombre au survol */
+  }
+  
+  .collapse-content {
+    padding: 15px 20px;
+    background-color: #ffecec;
+    border-radius: 10px;
+    margin-top: 10px;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .collapse-header h4 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .collapse-header span {
+    font-size: 1.5em; /* Taille de la flèche */
+    transition: transform 0.3s;
+  }
+  
+  .collapse-container.open .collapse-header span {
+    transform: rotate(180deg); /* Inverse la flèche lorsque le contenu est ouvert */
+  }
+  
