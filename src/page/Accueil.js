@@ -1,13 +1,12 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import ban from "../Images/banner.png";
 import Banner from "../components/Banner";
 import AppartementGrille from "../components/AppartementGrille";
 
 const Accueil = () => {
   return (
     <div>
-      <Navbar />
-      <Banner />
+      <Banner backgroundImage={ban} showTitle={true} />
       <AppartementGrille />
     </div>
   );

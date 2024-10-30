@@ -1,10 +1,11 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import montagne from "../Images/montagne.png";
+import Banner from "../components/Banner";
 
 const Apropos = () => {
   return (
     <div>
-      <Navbar />
+      <Banner backgroundImage={montagne} />
     </div>
   );
 };

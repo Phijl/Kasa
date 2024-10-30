@@ -71,8 +71,21 @@ function Fiche() {
             </div>
           </div>
         </div>
-        <Collapse title="Description" content={fiche.description} />
-        <Collapse title="Équipements" content={fiche.equipments.join(", ")} />
+        <div className="Collapse-flex">
+          <Collapse title="Description" content={fiche.description} />
+          <Collapse
+            title="Équipements"
+            content={
+              <div className="equipments-container">
+                {fiche.equipments.map((equipments, index) => (
+                  <span key={index} className="equipments">
+                    {equipments}
+                  </span>
+                ))}
+              </div>
+            }
+          />
+        </div>
       </div>
     </div>
   );

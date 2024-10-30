@@ -87,6 +87,14 @@ h3{
 .info2{
   display: block;
 }
+.Collapse-flex{
+  display: flex;
+  gap: 10vw;
+}
+.equipments-container{
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (max-width: 805px) {
   .info {
     display: block;
@@ -98,5 +106,9 @@ h3{
     align-items: center;
     text-align: center; 
   }
+.Collapse-flex{
+  flex-direction: column;
+  gap: 0px;
+}
   
 }
