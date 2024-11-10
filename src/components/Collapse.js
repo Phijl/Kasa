@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Collapse.css";
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, customClass }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -9,7 +9,7 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className="collapse-container">
+    <div className={`collapse-container ${customClass}`}>
       <div className="collapse-header" onClick={toggleCollapse}>
         <h4>{title}</h4>
         <span>{isOpen ? "\u25B2" : "\u25BC"}</span>

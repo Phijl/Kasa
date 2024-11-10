@@ -1,8 +1,14 @@
 .collapse-container {
-    margin: 20px 0;
-    width: 100%;
-    max-width: 40vw; /* Ajuster la largeur maximale pour les plus grands écrans */
-  }
+  width: 80vw; /* Assure une largeur appropriée à la page 'A Propos' */
+  max-width: 80vw; /* Conserve une limite de largeur à 80vw */
+margin-top: 10px;
+  box-sizing: border-box; /* Inclut padding et bordure dans la largeur totale */
+}
+.collapse-container.fiche {
+  width: 40vw; /* Largeur pour la page Fiche */
+  max-width: 40vw;
+}
+
   
   .collapse-header {
     background-color: #FF6060;
@@ -56,3 +62,4 @@
       max-width: 90vw;
     }
   }
+

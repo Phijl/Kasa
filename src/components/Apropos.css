@@ -1,0 +1,16 @@
+
+  
+  .propos {
+    display: flex;
+    flex-direction: column; /* Les éléments enfants seront empilés verticalement */
+    align-items: center; /* Centre chaque élément enfant horizontalement */
+    gap: 20px; /* Espace entre chaque Collapse */
+    max-width: 100%; /* Assure que le conteneur ne dépasse pas */
+  }
+  
+  @media screen and (max-width: 805px) {
+    .collapse-container.collapse-a-propos {
+      width: 100vw;
+    }
+  }
+  
