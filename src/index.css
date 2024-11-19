@@ -3,17 +3,20 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: "montserrat", sans-serif;
+    
   }
   
-  #root {
+  #app-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
   }
   
   .main-content {
-    flex: 1;
-  }
+    width: 100%;
+    max-width: 1440px; /* Assure une largeur maximale */
+    flex: 1; }
   
   .footer {
     background-color: black;
@@ -22,6 +25,7 @@ html, body {
     margin-top: 10px;
     display: grid;
     justify-items: center;
+    
     width: 100%; /* Assure que le footer prend toute la largeur */
   }
   
@@ -34,5 +38,6 @@ html, body {
       justify-content: center;
     }
   }
+
   
   

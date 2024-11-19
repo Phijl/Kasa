@@ -35,3 +35,23 @@
   color: white;
   font-weight: 700;
 }
+
+@media screen and (max-width: 805px) {
+  .line-break {
+    display: block;
+  }
+  .banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    border-radius: 25px;
+    display: grid;
+    align-items: center; /* Centre le contenu verticalement */
+    justify-content: start; /* Aligne le contenu à gauche */
+    padding-left: 20px; /* Ajoute un peu de marge à gauche pour le texte */
+    width: 90vw; /* Limite la largeur à 90% de la vue, alignée à la `navbar` */
+    max-width: 90vw;
+  }
+  
+}

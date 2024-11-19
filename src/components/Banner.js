@@ -8,7 +8,11 @@ function Banner({ backgroundImage, showTitle }) {
         className="banner"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        {showTitle && <h1>Chez vous, partout et ailleurs</h1>}
+        {showTitle && (
+          <h1 className="banner-title">
+            Chez vous,<span className="line-break"> partout et ailleurs</span>
+          </h1>
+        )}
       </div>
     </div>
   );

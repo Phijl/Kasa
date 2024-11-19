@@ -66,8 +66,8 @@ h3{
   margin-top: 15px;
 }
 .star{
-  width: 3vw;
-  
+  width: 30px;
+  margin-bottom: 10px;
 }
 .rating-container{
   display: flex;

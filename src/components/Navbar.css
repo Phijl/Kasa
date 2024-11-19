@@ -8,10 +8,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    max-width: 90vw; /* Limite la largeur de la barre de navigation à 90% de la vue */
+    max-width: 1440px; 
     width: 100%; /* Occupe toute la largeur disponible du conteneur */
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  @media screen and (max-width: 805px) {
+    .navbar {
+      width: 85%;
+    }
   }
   
   .link {

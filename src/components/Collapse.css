@@ -1,6 +1,6 @@
 .collapse-container {
   width: 80vw; /* Assure une largeur appropriée à la page 'A Propos' */
-  max-width: 80vw; /* Conserve une limite de largeur à 80vw */
+  max-width: 1440px; /* Conserve une limite de largeur à 80vw */
 margin-top: 10px;
   box-sizing: border-box; /* Inclut padding et bordure dans la largeur totale */
 }
@@ -48,14 +48,8 @@ margin-top: 10px;
     font-size: 1.2em;
   }
   
-  .collapse-header span {
-    font-size: 1.5em; /* Taille de la flèche */
-    transition: transform 0.3s;
-  }
-  
-  .collapse-container.open .collapse-header span {
-    transform: rotate(180deg); /* Inverse la flèche lorsque le contenu est ouvert */
-  }
+
+
   
   @media screen and (max-width: 805px) {
     .collapse-container{
@@ -63,3 +57,27 @@ margin-top: 10px;
     }
   }
 
+  .collapse-header span {
+    font-size: 1.5em; /* Taille de la flèche */
+    transition: transform 0.3s ease-in-out; /* Animation de la rotation */
+    display: inline-block; /* Assure que la transformation affecte bien l'élément */
+    transform: rotate(0deg); /* Flèche initiale vers le haut */
+  }
+  
+  .collapse-icon.rotate {
+    transform: rotate(-180deg); /* Tourne d'un demi-tour vers la gauche */
+  }
+  
+  .collapse-content-wrapper {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease; /* Animation de la hauteur */
+  }
+  
+  .collapse-content {
+    padding: 15px 20px;
+    background-color: #F6F6F673;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
